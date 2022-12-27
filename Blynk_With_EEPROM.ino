@@ -1,6 +1,6 @@
 #define BLYNK_TEMPLATE_ID "TMPLKZgGEGjx"
 #define BLYNK_DEVICE_NAME "EEpRom"
-#define BLYNK_AUTH_TOKEN "EBKxv4hfzKaK9HA6Ia-W6YiVRcRLJxqG"
+#define BLYNK_AUTH_TOKEN "Your AUTH token"
 
 #define BLYNK_PRINT Serial
 
