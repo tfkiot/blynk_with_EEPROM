@@ -17,14 +17,14 @@
 #define led7 D7
 #define led8 D8
 
-int load1, load1;
-int load2, load2;
-int load3, load3;
-int load4, load4;
-int load5, load5;
-int load6, load6;
-int load7, load7;
-int load8, load8;
+int load1=0;
+int load2=0;
+int load3=0;
+int load4=0;
+int load5=0;
+int load6=0;
+int load7=0;
+int load8=0;
 
 char auth[] = BLYNK_AUTH_TOKEN;
 
@@ -106,6 +106,36 @@ BLYNK_WRITE(V7){
   updateLed();
   }
 
+
+BLYNK_WRITE(V10){
+
+  digitalWrite(led1, HIGH);
+  }
+
+  BLYNK_WRITE(V11){
+  digitalWrite(led2, HIGH);
+  }
+BLYNK_WRITE(V12){
+  digitalWrite(led3, HIGH);
+  }
+
+  BLYNK_WRITE(V13){
+  digitalWrite(led4, HIGH);
+  }
+BLYNK_WRITE(V14){
+  digitalWrite(led5, HIGH);
+  }
+
+  BLYNK_WRITE(V15){
+  digitalWrite(led6, HIGH);
+  }
+BLYNK_WRITE(V16){
+  digitalWrite(led7, HIGH);
+  }
+
+  BLYNK_WRITE(V817){
+  digitalWrite(led8, HIGH);
+  }
 
 void updateLed(){
 digitalWrite(led1, load1);
